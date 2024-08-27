@@ -32,5 +32,5 @@ create_report:
     script:
         - curl "http://${MAIN_HOST}:${ALLURE_PORT}/generate-report"       
         - export REPORT_DATE=$(date +"%d-%m-%Y-%I:%M:%S")
-        #- export REPORT_DIR=$(ls -t /data/allure-report | grep -i [0-9] | head -1
-        - curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d text="LAST REPORT-$REPORT_DATE - http://${MAIN_HOST}:${ALLURE_PORT}/latest-report"
+        - export REPORT_DIR=$(ls -t /data/allure-reports | grep -i [0-9] | head -1)
+        - curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d text="LAST REPORT-$REPORT_DATE - http://${MAIN_HOST}:${ALLURE_PORT}/projects/default/reports/$REPORT_DIR/index.html"
