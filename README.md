@@ -1,9 +1,7 @@
-# PetProject
+
 ## Introduction 
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]([https://travis-ci.org/joemccann/dillinger](https://gitlab.com/devops_rep/Sandbox))
 
 In this project, I’ve set up a robust CI/CD pipeline. It begins with configuring the environment using CentOS 9 and VirtualBox. GitLab serves as our code management platform. I’ve created a dedicated user, established SSH connections, and cloned repositories. 
 
