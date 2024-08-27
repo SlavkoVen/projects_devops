@@ -43,7 +43,7 @@ CentOS 9 and VirtualBox (VBox):
 - Mounting the Shared Folder:
     - Inside the CentOS VM, create a mount point:
 ```sh
-    sudo mkdir /cdrom ```
+    sudo mkdir /cdrom 
 ```
 - Mount the VirtualBox Guest Additions CD (assuming it’s already inserted):
 ``` sh
